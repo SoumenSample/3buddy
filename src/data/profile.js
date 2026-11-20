@@ -18,7 +18,7 @@ const profile = {
   twitter: "https://twitter.com/3buddy",
   portfolio: "https://3buddy.com",
   resume: "/resume.pdf",
-  yearsExperience: "4+",
+  yearsExperience: "1+",
   philosophy:
     "We believe in writing clean, scalable, and maintainable code that makes a lasting difference. Every project is a story waiting to be built.",
   currentRole: "Full Stack Developers",

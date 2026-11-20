@@ -90,10 +90,11 @@ export default function Contact() {
       value: profile.phone,
       fullWidth: true,
     },
-    { icon: MapPin, label: "Location", value: profile.location, href: null },
-    { icon: GithubIcon, label: "GitHub", value: "github.com/3buddy", href: profile.github },
-    { icon: LinkedinIcon, label: "LinkedIn", value: "linkedin.com/company/3buddy", href: profile.linkedin },
-    { icon: TwitterIcon, label: "Twitter", value: "@3buddy", href: profile.twitter },
+    { icon: MapPin, label: "Location", value: profile.location, href: null, fullWidth: true },
+    // GitHub, LinkedIn, Twitter hidden for now
+    // { icon: GithubIcon, label: "GitHub", value: "github.com/3buddy", href: profile.github },
+    // { icon: LinkedinIcon, label: "LinkedIn", value: "linkedin.com/company/3buddy", href: profile.linkedin },
+    // { icon: TwitterIcon, label: "Twitter", value: "@3buddy", href: profile.twitter },
   ];
 
   return (

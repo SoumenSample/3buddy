@@ -146,50 +146,26 @@ export default function Hero() {
               </a>
             </motion.div>
 
-            {/* Social Icons row */}
+            {/* Connect row (GitHub, LinkedIn, Twitter hidden for now) */}
             <motion.div
               className="flex justify-center lg:justify-start gap-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
             >
-              <a
-                href={profile.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 sketch-border-thin bg-white flex items-center justify-center hover:bg-yellow hover:scale-105 transition-all shadow-[2px_2px_0px_#111]"
-                data-cursor="GITHUB"
-                aria-label="GitHub profile"
-              >
-                <GithubIcon size={18} />
-              </a>
-              <a
-                href={profile.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 sketch-border-thin bg-white flex items-center justify-center hover:bg-yellow hover:scale-105 transition-all shadow-[2px_2px_0px_#111]"
-                data-cursor="LINKEDIN"
-                aria-label="LinkedIn profile"
-              >
-                <LinkedinIcon size={18} />
-              </a>
-              <a
-                href={profile.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 sketch-border-thin bg-white flex items-center justify-center hover:bg-yellow hover:scale-105 transition-all shadow-[2px_2px_0px_#111]"
-                data-cursor="TWITTER"
-                aria-label="Twitter profile"
-              >
-                <TwitterIcon size={18} />
-              </a>
+              {/* Social icons hidden for now:
+              <a href={profile.github} ...><GithubIcon size={18} /></a>
+              <a href={profile.linkedin} ...><LinkedinIcon size={18} /></a>
+              <a href={profile.twitter} ...><TwitterIcon size={18} /></a>
+              */}
               <a
                 href={`mailto:${profile.email}`}
-                className="w-10 h-10 sketch-border-thin bg-white flex items-center justify-center hover:bg-yellow hover:scale-105 transition-all shadow-[2px_2px_0px_#111]"
+                className="h-10 px-4 sketch-border-thin bg-white flex items-center gap-2 hover:bg-yellow hover:scale-105 transition-all shadow-[2px_2px_0px_#111] text-xs font-bold font-[family-name:var(--font-fira)] text-black"
                 data-cursor="EMAIL"
                 aria-label="Email 3buddy"
               >
-                <Mail size={18} />
+                <Mail size={16} />
+                <span>{profile.email}</span>
               </a>
             </motion.div>
           </div>

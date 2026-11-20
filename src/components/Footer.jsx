@@ -38,12 +38,12 @@ export default function Footer() {
             We turn bold ideas into high-performance, lovable software products. Available for select freelance, contract, and studio engagements.
           </p>
 
-          {/* Social links row */}
+          {/* Contact / Email links row (GitHub, LinkedIn, Twitter hidden for now) */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
-              { Icon: GithubIcon, href: profile.github, label: "GitHub" },
-              { Icon: LinkedinIcon, href: profile.linkedin, label: "LinkedIn" },
-              { Icon: TwitterIcon, href: profile.twitter, label: "Twitter" },
+              // { Icon: GithubIcon, href: profile.github, label: "GitHub" },
+              // { Icon: LinkedinIcon, href: profile.linkedin, label: "LinkedIn" },
+              // { Icon: TwitterIcon, href: profile.twitter, label: "Twitter" },
               { Icon: Mail, href: `mailto:${profile.email}`, label: "Email" },
             ].map(({ Icon, href, label }) => (
               <motion.a

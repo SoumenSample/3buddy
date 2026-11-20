@@ -208,45 +208,24 @@ export default function Team() {
                   </div>
                 </div>
 
-                {/* Social Connect */}
+                {/* Direct Reach (GitHub, LinkedIn, Twitter hidden for now) */}
                 <div className="flex items-center justify-between pt-4 mt-5 border-t-2 border-black/10">
-                  <span className="text-[11px] font-mono font-bold text-black/50">CONNECT:</span>
+                  <span className="text-[11px] font-mono font-bold text-black/50">DIRECT REACH:</span>
                   <div className="flex items-center gap-2">
-                    <a
-                      href={member.socials.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-7 h-7 bg-paper border border-black flex items-center justify-center hover:bg-yellow hover:scale-105 transition-all rounded shadow-[1px_1px_0px_#111]"
-                      aria-label={`${member.name} GitHub`}
-                    >
-                      <GithubIcon size={13} />
-                    </a>
-                    <a
-                      href={member.socials.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-7 h-7 bg-paper border border-black flex items-center justify-center hover:bg-yellow hover:scale-105 transition-all rounded shadow-[1px_1px_0px_#111]"
-                      aria-label={`${member.name} LinkedIn`}
-                    >
-                      <LinkedinIcon size={13} />
-                    </a>
-                    <a
-                      href={member.socials.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-7 h-7 bg-paper border border-black flex items-center justify-center hover:bg-yellow hover:scale-105 transition-all rounded shadow-[1px_1px_0px_#111]"
-                      aria-label={`${member.name} Twitter`}
-                    >
-                      <TwitterIcon size={13} />
-                    </a>
+                    {/* Socials hidden for now:
+                    <a href={member.socials.github} ...><GithubIcon size={13} /></a>
+                    <a href={member.socials.linkedin} ...><LinkedinIcon size={13} /></a>
+                    <a href={member.socials.twitter} ...><TwitterIcon size={13} /></a>
+                    */}
                     {member.phone && (
                       <a
                         href={`tel:${member.phone.replace(/\s+/g, "")}`}
-                        className="w-7 h-7 bg-yellow border border-black flex items-center justify-center hover:bg-white hover:scale-105 transition-all rounded shadow-[1px_1px_0px_#111]"
+                        className="px-2.5 py-1 bg-yellow border border-black flex items-center gap-1.5 hover:bg-white hover:scale-105 transition-all rounded shadow-[1px_1px_0px_#111] text-xs font-mono font-bold text-black"
                         aria-label={`Call ${member.name} at ${member.phone}`}
                         title={member.phone}
                       >
-                        <Phone size={13} className="text-black" />
+                        <Phone size={12} className="text-black" />
+                        <span>{member.phone}</span>
                       </a>
                     )}
                   </div>
