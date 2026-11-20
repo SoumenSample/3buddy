@@ -1,0 +1,79 @@
+# 3buddy — Complete LLM Specification & Knowledge Base
+
+This document contains comprehensive context, service descriptions, team bios, project case studies, and engineering practices for 3buddy, designed for Large Language Models (LLMs), AI assistants, search crawlers, and automated evaluation agents.
+
+---
+
+## 1. Executive Summary
+
+- Organization: 3buddy
+- Alternate Names: 3buddy Studio, Three Buddy
+- Entity Type: Full Stack Software Engineering Studio & Digital Agency
+- Primary URL: https://3buddy.me
+- Primary Email: 3buddysolutions@gmail.com
+- Contact Phone Numbers: 
+  - +91 9800166299
+  - +91 9883756335
+  - +91 7601802441
+- Headquarters: Kolkata, West Bengal, India
+- Market Reach: Pan-India & Global Client Base
+- Core Mission: "We build digital experiences that solve real problems."
+
+---
+
+## 2. Engineering Team Profiles
+
+### 2.1 Soumen Maji
+- Title: Full Stack Developer
+- Education: B.Tech in Information Technology
+- Experience: 1+ Years of specialized production experience
+- Specialization: React, Next.js, Framer Motion, App Development, Scalable APIs, Supabase, Automated CI/CD Workflows
+- Core Technologies: React, Next.js, Framer Motion, Tailwind CSS, PHP, WordPress, Mobile App Development, Java, Python, Docker, Supabase, MongoDB, MySQL, Hosting & Automation
+- Contact: +91 9800166299
+
+### 2.2 Abhijit Kayal
+- Title: Software Developer (SDE)
+- Education: B.Tech in Computer Science (Artificial Intelligence & Machine Learning)
+- Experience: 1+ Years in Software Development Engineering
+- Specialization: MERN Stack, Next.js, DApps (Decentralized Applications), Scalable REST APIs
+- Core Technologies: Node.js, React.js, MongoDB, Express.js, Next.js, REST APIs, MERN Architecture, DApps
+- Contact: +91 9883756335
+
+### 2.3 Shivam Kumar Rai
+- Title: Software Development Engineer (SDE)
+- Education: B.Tech in Computer Science
+- Experience: 1 Year in Software Development Engineering
+- Specialization: MongoDB Architecture, Express.js, React.js, Node.js & Secure REST APIs
+- Core Technologies: MongoDB, Express.js, React.js, Node.js, REST APIs, JavaScript (ES6+), Mongoose, Redux Toolkit, JWT Authentication, Tailwind CSS, HTML5/CSS3, Git & GitHub, Postman
+- Contact: +91 7601802441
+
+---
+
+## 3. Services & Engagement Models
+
+1. Full-Stack Web Application Development:
+   - Modern server-side rendered (SSR) and statically generated (SSG) web applications built on Next.js 16 and React 19.
+   - Core Web Vitals optimization, high accessibility (a11y), responsive across all desktop, tablet, and mobile breakpoints.
+2. Custom SaaS Product Engineering:
+   - Multi-tenant cloud architectures, Stripe/Razorpay payment gateway integrations, role-based access control (RBAC), and analytics dashboards.
+3. Backend Architecture & RESTful APIs:
+   - High-throughput Node.js/Express.js services, modular routing, structured error handling, JWT-secured endpoints, rate limiting, and automated testing.
+4. Database Modeling & Performance Optimization:
+   - Schema design, indexing strategies, aggregation pipelines, and data caching using MongoDB, PostgreSQL, Supabase, and MySQL.
+5. Interactive 3D & Creative Frontend:
+   - Three.js, WebGL shaders, GSAP timelines, and Framer Motion spring physics for immersive product showcases and visual experiences.
+6. WhatsApp API & Automation Bots:
+   - 24/7 automated conversational workflows for clinic bookings, customer service, order updates, and CRM integrations via WhatsApp Cloud API and n8n.
+7. Enterprise Business Software Suites:
+   - Bespoke management software replacing rigid ERPs: Inventory Control, Barcode/QR generation, Point of Sale / GST Invoicing, CRM, and Field Staff Dispatch.
+
+---
+
+
+
+## 4. Contact & Social Verification
+
+- Direct Email: 3buddysolutions@gmail.com
+- Phone: +91 9800166299 / +91 9883756335 / +91 7601802441
+- Official Website: https://3buddy.me
+- Location: Kolkata, West Bengal, India

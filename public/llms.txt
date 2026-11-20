@@ -1,0 +1,26 @@
+# 3buddy
+
+> 3buddy is a full-stack digital development studio and software engineering team based in Kolkata, India. We build high-performance web applications, scalable REST APIs, SaaS platforms, interactive 3D WebGL experiences, and custom enterprise management software systems.
+
+## Essential Information
+- Studio Name: 3buddy (Full Stack Developers & Digital Studio)
+- Website: https://3buddy.me
+- Contact Email: 3buddysolutions@gmail.com
+- Contact Phones: +91 9800166299, +91 9883756335, +91 7601802441
+- Location: Kolkata, West Bengal, India
+- Availability: Open to client projects, SaaS contracts, MVPs, and long-term engineering engagements
+
+## Technical Stack & Specializations
+- Frontend: Next.js 16, React 19, Tailwind CSS 4, Framer Motion, GSAP, Three.js / WebGL, Responsive Neobrutalist UI/UX
+- Backend & APIs: Node.js, Express.js, RESTful APIs, JWT Authentication, Microservices, Python, Java, PHP
+- Databases: MongoDB, PostgreSQL, Supabase, MySQL, Redis, Mongoose, Prisma ORM
+- DevOps & Cloud: Docker, Cloudflare, Vercel, AWS, GitHub Actions, CI/CD, n8n Workflow Automations
+- Specialized Capabilities: Decentralized Web Apps (DApps), WhatsApp Cloud API Conversational Bots, Interactive 3D Product Showrooms, Business Management ERP Suites
+
+## The Founding Team
+- Soumen Maji: Full Stack Developer (B.Tech Information Technology). Expert in Next.js, React, Framer Motion, Mobile Apps, REST APIs, Supabase & Deployment Automation. Direct Phone: +91 9800166299.
+- Abhijit Kayal: Software Developer / SDE (B.Tech Computer Science & AIML). Expert in MERN Stack, Next.js, DApps, High-Throughput REST APIs, Node.js & Scalable Architectures. Direct Phone: +91 9883756335.
+- Shivam Kumar Rai: Software Development Engineer / SDE (B.Tech Computer Science). Expert in MongoDB Schema Engineering, Express.js, React.js, Node.js, JWT Security & State Management. Direct Phone: +91 7601802441.
+
+## Detailed LLM Reference
+- For in-depth project technical breakdowns, architectural specifications, and full code patterns, visit: https://3buddy.me/llms-full.txt
