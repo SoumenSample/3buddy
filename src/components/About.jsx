@@ -6,9 +6,7 @@ import DeveloperIllustration from "./DeveloperIllustration";
 import profile from "@/data/profile";
 
 const annotations = [
-  { text: "passionate trio!", x: "right-3 top-2", rotate: 3 },
-  { text: "clean architecture", x: "left-6 -bottom-3", rotate: -2 },
-  { text: "creative problem solvers", x: "right-8 -bottom-3", rotate: 2 },
+  { text: "passionate trio! ⚡", x: "right-5 top-3", rotate: 2 },
 ];
 
 export default function About() {
@@ -132,6 +130,18 @@ export default function About() {
                   <p className="font-[family-name:var(--font-caveat)] text-xl sm:text-2xl text-black leading-snug">
                     &ldquo;{profile.philosophy}&rdquo;
                   </p>
+                </div>
+
+                {/* Handwritten footer notes inside notebook */}
+                <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-dashed border-black/25 text-black/75 font-[family-name:var(--font-caveat)] text-lg sm:text-xl font-bold">
+                  <span className="inline-flex items-center gap-1.5 rotate-[-1.5deg]">
+                    <span className="text-yellow-600 font-extrabold text-base">✦</span>
+                    clean architecture
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 rotate-[1.5deg]">
+                    creative problem solvers
+                    <span className="text-yellow-600 font-extrabold text-base">✦</span>
+                  </span>
                 </div>
               </div>
 
