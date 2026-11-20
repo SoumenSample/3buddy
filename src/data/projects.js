@@ -169,6 +169,30 @@ const projects = [
   },
   {
     id: 8,
+    name: "Atelier Kasama",
+    description:
+      "Haute ébénisterie web experience for Atelier Kasama featuring immersive 3D furniture rendering, interactive spatial showroom controls, material customization, and architectural consultation booking across Mumbai, Delhi, and Bengaluru.",
+    shortDescription: "Luxury bespoke furniture & 3D interactive showroom platform.",
+    techStack: ["Three.js", "React", "Next.js", "Tailwind CSS", "WebGL"],
+    category: ["frontend", "nextjs", "fullstack"],
+    github: null,
+    live: "https://furniture-three-blue.vercel.app/",
+    image: "/projects/atelier-kasama.jpg",
+    featured: false,
+    problem:
+      "High-end bespoke furniture ateliers struggle to convey custom wood grains, fine brass inlays, and true 3D spatial proportions through standard 2D catalogs.",
+    solution:
+      "Engineered an interactive 3D WebGL showroom allowing interior designers and private clients to orbit furniture pieces in real-time 3D, inspect material finishes, and book bespoke studio consultations.",
+    features: [
+      "Interactive 3D WebGL showroom with 360-degree orbit & spatial lighting",
+      "High-fidelity material shaders for wood grains, brass inlays, and marble",
+      "Haute ébénisterie collection catalog with bespoke sizing specs",
+      "Private design consultation and custom commission request gateway",
+      "Optimized 60 FPS rendering pipeline across desktop and mobile devices",
+    ],
+  },
+  {
+    id: 9,
     name: "WhatsApp Doctor Booking & Clinic Dashboard",
     description:
       "Conversational WhatsApp appointment booking bot with live Next.js clinic dashboard, automated doctor slot scheduling, n8n webhook pipelines, and real-time Supabase patient sync.",

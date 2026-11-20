@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Mail, Terminal, Code, Folder, Database, Rocket, Laptop } from "lucide-react";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "./SocialIcons";
 import DeveloperIllustration from "./DeveloperIllustration";
+import CartoonHand from "./CartoonHand";
 import profile from "@/data/profile";
 
 const floatingIcons = [
@@ -79,7 +80,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Hey there! 👋
+              Hey there!{" "}
+              <CartoonHand className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 inline-block align-middle ml-1 -mt-2 sm:-mt-3" />
               <br />
               We are{" "}
               <span className="relative inline-block text-black">

@@ -58,7 +58,7 @@ function MemberAvatar({ id, accent }) {
     );
   }
 
-  // Samir - DevOps & Cloud Lead with headphones
+  // Shivam - MERN Stack Developer with headphones
   return (
     <svg viewBox="0 0 160 160" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="160" height="160" rx="16" fill="#DBEAFE" />
