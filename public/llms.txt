@@ -4,7 +4,7 @@
 
 ## Essential Information
 - Studio Name: 3buddy (Full Stack Developers & Digital Studio)
-- Website: https://3buddy.me
+- Website: https://www.3buddy.me
 - Contact Email: 3buddysolutions@gmail.com
 - Contact Phones: +91 9800166299, +91 9883756335, +91 7601802441
 - Location: Kolkata, West Bengal, India
@@ -23,4 +23,4 @@
 - Shivam Kumar Rai: Software Development Engineer / SDE (B.Tech Computer Science). Expert in MongoDB Schema Engineering, Express.js, React.js, Node.js, JWT Security & State Management. Direct Phone: +91 7601802441.
 
 ## Detailed LLM Reference
-- For in-depth project technical breakdowns, architectural specifications, and full code patterns, visit: https://3buddy.me/llms-full.txt
+- For in-depth technical breakdowns, architectural specifications, and full code patterns, visit: https://www.3buddy.me/llms-full.txt

@@ -16,7 +16,7 @@ const profile = {
   github: "https://github.com/3buddy",
   linkedin: "https://linkedin.com/company/3buddy",
   twitter: "https://twitter.com/3buddy",
-  portfolio: "https://3buddy.me",
+  portfolio: "https://www.3buddy.me",
   resume: "/resume.pdf",
   yearsExperience: "1+",
   philosophy:

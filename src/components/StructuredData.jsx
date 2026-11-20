@@ -1,5 +1,5 @@
 export default function StructuredData() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3buddy.me";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.3buddy.me";
 
   const jsonLd = {
     "@context": "https://schema.org",

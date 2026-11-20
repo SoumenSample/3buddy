@@ -1,7 +1,7 @@
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3buddy.me";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.3buddy.me";
 
 export const viewport = {
   themeColor: [
@@ -16,11 +16,11 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "3buddy — Full Stack Developers & Digital Studio | Kolkata, India",
+    default: "3buddy — Full Stack Developers & Digital Studio",
     template: "%s | 3buddy",
   },
   description:
-    "Portfolio of 3buddy — A creative team of full-stack developers in Kolkata, India crafting high-performance web applications, scalable REST APIs, SaaS platforms, and bespoke business software systems.",
+    "Portfolio of 3buddy, full-stack developers in Kolkata, India crafting high-performance web apps, scalable REST APIs, SaaS platforms & custom software.",
   applicationName: "3buddy Portfolio",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
@@ -38,8 +38,6 @@ export const metadata = {
     "SaaS product development",
     "custom software development",
     "website development Kolkata",
-    "website developer",
-    "website development company",
     "REST API development",
     "DApps developers",
     "Three.js 3D web development",
@@ -59,9 +57,9 @@ export const metadata = {
   category: "technology",
   classification: "Portfolio & Software Engineering Studio",
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
     languages: {
-      "en-US": "/",
+      "en-US": siteUrl,
     },
   },
   openGraph: {
@@ -71,7 +69,7 @@ export const metadata = {
     siteName: "3buddy Portfolio",
     title: "3buddy — Full Stack Developers & Digital Studio",
     description:
-      "A creative team of full-stack developers in Kolkata, India building high-impact web apps, scalable APIs, SaaS products, and custom business management software.",
+      "Portfolio of 3buddy, full-stack developers in Kolkata, India crafting high-performance web apps, scalable REST APIs, SaaS platforms & custom software.",
     images: [
       {
         url: "/og-image.png",
@@ -88,7 +86,7 @@ export const metadata = {
     creator: "@3buddy",
     title: "3buddy — Full Stack Developers & Digital Studio",
     description:
-      "A creative team of full-stack developers in Kolkata, India building high-impact web apps, scalable APIs, SaaS products, and custom business management software.",
+      "Portfolio of 3buddy, full-stack developers in Kolkata, India crafting high-performance web apps, scalable REST APIs, SaaS platforms & custom software.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -138,7 +136,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="antialiased scroll-smooth">
       <head>
-        <link rel="canonical" href={siteUrl} />
         <link
           rel="alternate"
           type="text/plain"

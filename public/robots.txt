@@ -1,4 +1,4 @@
-# robots.txt for 3buddy (https://3buddy.me)
+# robots.txt for 3buddy (https://www.3buddy.me)
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -58,5 +58,5 @@ Allow: /
 Disallow: /api/
 
 # Sitemaps & Host
-Sitemap: https://3buddy.me/sitemap.xml
-Host: https://3buddy.me
+Sitemap: https://www.3buddy.me/sitemap.xml
+Host: https://www.3buddy.me

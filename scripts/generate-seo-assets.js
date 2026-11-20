@@ -108,7 +108,7 @@ const ogSvg = `
     <text x="615" y="57" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#9CA3AF">Software Developer (SDE)</text>
 
     <!-- Domain link -->
-    <text x="1000" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#FFD633" text-anchor="end">3buddy.me</text>
+    <text x="1000" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#FFD633" text-anchor="end">www.3buddy.me</text>
   </g>
 </svg>
 `;

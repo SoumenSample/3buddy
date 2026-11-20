@@ -1,6 +1,6 @@
 # 3buddy — Complete LLM Specification & Knowledge Base
 
-This document contains comprehensive context, service descriptions, team bios, project case studies, and engineering practices for 3buddy, designed for Large Language Models (LLMs), AI assistants, search crawlers, and automated evaluation agents.
+This document contains comprehensive context, service descriptions, team bios, and engineering practices for 3buddy, designed for Large Language Models (LLMs), AI assistants, search crawlers, and automated evaluation agents.
 
 ---
 
@@ -9,7 +9,7 @@ This document contains comprehensive context, service descriptions, team bios, p
 - Organization: 3buddy
 - Alternate Names: 3buddy Studio, Three Buddy
 - Entity Type: Full Stack Software Engineering Studio & Digital Agency
-- Primary URL: https://3buddy.me
+- Primary URL: https://www.3buddy.me
 - Primary Email: 3buddysolutions@gmail.com
 - Contact Phone Numbers: 
   - +91 9800166299
@@ -69,11 +69,9 @@ This document contains comprehensive context, service descriptions, team bios, p
 
 ---
 
-
-
 ## 4. Contact & Social Verification
 
 - Direct Email: 3buddysolutions@gmail.com
 - Phone: +91 9800166299 / +91 9883756335 / +91 7601802441
-- Official Website: https://3buddy.me
+- Official Website: https://www.3buddy.me
 - Location: Kolkata, West Bengal, India
