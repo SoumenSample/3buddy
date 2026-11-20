@@ -195,7 +195,7 @@ const projects = [
     id: 9,
     name: "WhatsApp Doctor Booking & Clinic Dashboard",
     description:
-      "Conversational WhatsApp appointment booking bot with live Next.js clinic dashboard, automated doctor slot scheduling, n8n webhook pipelines, and real-time Supabase patient sync.",
+      "Conversational WhatsApp appointment booking bot with live clinic dashboard, automated doctor slot scheduling and real-time patient sync.",
     shortDescription: "WhatsApp doctor appointment booking & real-time clinic dashboard.",
     techStack: ["Next.js", "Supabase", "n8n", "WhatsApp Cloud API", "Tailwind CSS"],
     category: ["fullstack", "saas", "nextjs"],
@@ -206,13 +206,153 @@ const projects = [
     problem:
       "Clinics and practitioners lose 30%+ of potential appointments due to busy phone lines, chaotic manual WhatsApp chats, and high patient no-show rates.",
     solution:
-      "Engineered an automated 24/7 WhatsApp booking bot connected via n8n workflows with a live Next.js + Supabase dashboard for real-time doctor availability and patient scheduling.",
+      "Engineered an automated 24/7 WhatsApp booking bot connected via n8n workflows with a live dashboard for real-time doctor availability and patient scheduling.",
     features: [
       "24/7 Automated WhatsApp chatbot appointment booking & slot allocation",
-      "Real-time Next.js + Supabase clinic management live dashboard",
+      "Real-time  clinic management live dashboard",
       "n8n automated patient reminder & follow-up workflows",
       "Instant doctor schedule sync, cancellation & reschedule handling",
       "Digital prescription delivery & patient visit history tracking",
+    ],
+  },
+  {
+    id: 10,
+    name: "Custom Enterprise & Business Management Software Systems",
+    shortDescription: "Combined suite of 8+ ready-to-deploy business management solutions built by 3buddy.",
+    description:
+      "A comprehensive, unified showcase of production-ready business management softwares engineered by 3buddy. From high-speed retail billing and field technician dispatch to multi-branch clinic and pharmacy operations, each system is crafted for reliability, local compliance, role-based security, and custom operational needs.",
+    techStack: ["Next.js", "React", "Node.js", "PostgreSQL", "Supabase", "Tailwind CSS", "Prisma"],
+    category: ["fullstack", "saas", "nextjs"],
+    github: null,
+    live: "#contact",
+    image: null,
+    featured: true,
+    isSoftwareSuite: true,
+    problem:
+      "Businesses often get locked into inflexible, expensive subscription ERPs that fail to fit their exact ground realities — such as fast counter billing, technician job assignment, specific GST formats, or local offline requirements.",
+    solution:
+      "We build and deploy robust, tailored web and cloud management software systems with role-based access control, zero unnecessary bloat, real-time analytics, and lifetime software ownership.",
+    softwareTypes: [
+      {
+        id: "inventory",
+        title: "Inventory Management System",
+        tag: "Stock & Warehouses",
+        icon: "Package",
+        description:
+          "Live stock valuation, multi-warehouse sync, SKU barcode scanning, automated re-order thresholds, vendor purchase orders, and shrinkage audits.",
+        features: [
+          "Multi-warehouse & batch tracking",
+          "Low stock alerts & automated PO generation",
+          "Barcode & QR code generation",
+          "Dead stock & wastage reports",
+        ],
+      },
+      {
+        id: "store",
+        title: "Store & Retail Management System",
+        tag: "Retail & POS Billing",
+        icon: "Store",
+        description:
+          "Lightning-fast counter Point-of-Sale (POS), barcode reader integration, daily cash drawer reconciliation, customer loyalty tracking, and instant GST invoice printing.",
+        features: [
+          "Ultra-fast billing (<3 seconds per bill)",
+          "Cash, UPI & card reconciliation",
+          "Thermal printer receipt support",
+          "Daily sales, profit & ledger reports",
+        ],
+      },
+      {
+        id: "technician",
+        title: "Technician & Field Service Management",
+        tag: "Field Operations & AMC",
+        icon: "Wrench",
+        description:
+          "Work order ticketing, live technician dispatching, on-site GPS logs, spare parts usage tracking, customer feedback, and digital sign-off approvals.",
+        features: [
+          "Task allocation & mobile engineer queue",
+          "Parts & materials consumption logs",
+          "Customer e-signatures on completion",
+          "AMC & warranty service tracking",
+        ],
+      },
+      {
+        id: "hrms",
+        title: "HR & Payroll Management (HRMS)",
+        tag: "Workforce & Payroll",
+        icon: "Users",
+        description:
+          "Centralized employee master database, biometric & geo-fenced attendance logs, shift rosters, leave requests, and automated one-click monthly payroll generation.",
+        features: [
+          "Biometric & shift attendance sync",
+          "Automated salary slips & PF/ESI deductions",
+          "Leave approval & calendar workflows",
+          "Employee self-service records",
+        ],
+      },
+      {
+        id: "ecommerce",
+        title: "E-Commerce & Digital Storefronts",
+        tag: "Online Retail & B2B",
+        icon: "ShoppingBag",
+        description:
+          "Scalable B2C storefronts and B2B ordering portals with dynamic catalogs, cart engines, instant payment gateway integration (Razorpay, Stripe), and automated shipping sync.",
+        features: [
+          "Custom storefronts & product catalog variants",
+          "Instant UPI / card checkout gateways",
+          "Discount vouchers & coupons engine",
+          "Automated order packing & logistics dispatch",
+        ],
+      },
+      {
+        id: "pharmacy",
+        title: "Pharmacy & Chemist Management",
+        tag: "Healthcare & Pharma",
+        icon: "Pill",
+        description:
+          "Strict medicinal batch and expiry date management, Schedule H & H1 drug sale registers, instant generic substitute search, and compliant GST medical billing.",
+        features: [
+          "Batch number & expiry date auto-alerts",
+          "Substitute / molecule search engine",
+          "Schedule H drug compliance register",
+          "Distributor purchase ledgers",
+        ],
+      },
+      {
+        id: "restaurant",
+        title: "Restaurant & Food Outlet Management",
+        tag: "Dining, Cafes & QSR",
+        icon: "UtensilsCrossed",
+        description:
+          "Interactive floor table management, captain order taking, live Kitchen Order Tickets (KOT) on kitchen display systems, split bill settlements, and recipe inventory deduction.",
+        features: [
+          "Table & room occupancy layout",
+          "Real-time kitchen order tickets (KOT)",
+          "Touchscreen quick billing for QSR",
+          "Recipe costing & ingredient tracking",
+        ],
+      },
+      {
+        id: "clinic",
+        title: "Clinic & Hospital Practice Management",
+        tag: "Doctors & OPD Centers",
+        icon: "Stethoscope",
+        description:
+          "Multi-doctor appointment schedules, walk-in OPD queue tokens, digital electronic health records (EHR), prescription generator, and automated WhatsApp appointment reminders.",
+        features: [
+          "OPD appointment & token queue display",
+          "Fast prescription printing & symptom templates",
+          "Patient history & diagnostic test records",
+          "Automated WhatsApp appointment updates",
+        ],
+      },
+    ],
+    features: [
+      "Modular design — pick any standalone module or run an integrated ERP",
+      "Role-Based Access Control (Admin, Branch Manager, Billing Clerk, Field Tech)",
+      "Automated GST invoicing, E-Way bills & financial summaries",
+      "Offline-first architecture with automatic cloud synchronization",
+      "Real-time WhatsApp, SMS & Email alerts for operations",
+      "Instant data export to Excel, CSV, PDF, and Tally-compatible ledgers",
     ],
   },
 ];
@@ -220,9 +360,9 @@ const projects = [
 export const projectCategories = [
   { id: "all", label: "ALL" },
   { id: "fullstack", label: "FULL STACK" },
+  { id: "saas", label: "SAAS & ERP" },
   { id: "nextjs", label: "NEXT.JS" },
   { id: "frontend", label: "FRONTEND" },
-  { id: "saas", label: "SAAS" },
 ];
 
 export default projects;

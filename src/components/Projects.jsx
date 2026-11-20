@@ -2,9 +2,37 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Star, Code2, Globe, Info, X } from "lucide-react";
+import {
+  ExternalLink,
+  Star,
+  Code2,
+  Globe,
+  Info,
+  X,
+  Package,
+  Store,
+  Wrench,
+  Users,
+  ShoppingBag,
+  Pill,
+  UtensilsCrossed,
+  Stethoscope,
+  ArrowRight,
+  Layers,
+} from "lucide-react";
 import SectionTitle from "./SectionTitle";
 import projects, { projectCategories } from "@/data/projects";
+
+const SOFTWARE_ICONS = {
+  Package,
+  Store,
+  Wrench,
+  Users,
+  ShoppingBag,
+  Pill,
+  UtensilsCrossed,
+  Stethoscope,
+};
 
 function ProjectModal({ project, onClose }) {
   const [mounted, setMounted] = useState(false);
@@ -144,6 +172,85 @@ function ProjectModal({ project, onClose }) {
             </div>
           )}
 
+          {/* Software Suite Breakdown (if applicable) */}
+          {project.softwareTypes && project.softwareTypes.length > 0 && (
+            <div className="pt-3 space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b-2 border-black/10 pb-2 gap-1">
+                <div>
+                  <h4 className="font-[family-name:var(--font-caveat)] text-2xl sm:text-3xl font-extrabold text-black">
+                    8 Modular Management Systems Included
+                  </h4>
+                  <p className="text-xs text-black/70">
+                    Deploy any software as a standalone solution or combine into an integrated ERP.
+                  </p>
+                </div>
+                <span className="bg-yellow border border-black px-2 py-0.5 text-[10px] font-mono font-extrabold rounded self-start sm:self-auto shadow-[1px_1px_0px_#111]">
+                  Customizable Workflows
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {project.softwareTypes.map((item) => {
+                  const IconComponent = SOFTWARE_ICONS[item.icon] || Package;
+                  return (
+                    <div
+                      key={item.id}
+                      className="p-3.5 bg-paper/70 border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] shadow-[2px_2px_0px_#111] flex flex-col justify-between hover:bg-yellow/15 transition-all"
+                    >
+                      <div>
+                        <div className="flex items-center gap-2.5 mb-2">
+                          <div className="w-8 h-8 rounded bg-yellow border-1.5 border-black flex items-center justify-center shrink-0 shadow-[1px_1px_0px_#111]">
+                            <IconComponent size={16} className="text-black" />
+                          </div>
+                          <div className="min-w-0">
+                            <h5 className="font-bold text-xs sm:text-sm text-black leading-tight truncate">
+                              {item.title}
+                            </h5>
+                            <span className="text-[10px] font-mono text-black/60 uppercase">
+                              {item.tag}
+                            </span>
+                          </div>
+                        </div>
+
+                        <p className="text-xs text-black/75 mb-2 leading-relaxed">
+                          {item.description}
+                        </p>
+
+                        <ul className="space-y-1 mb-3">
+                          {item.features.map((feat) => (
+                            <li key={feat} className="flex items-center gap-1.5 text-[11px] text-black/85">
+                              <span className="text-green-700 font-bold shrink-0">✓</span>
+                              <span className="leading-snug">{feat}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() => {
+                          onClose();
+                          window.dispatchEvent(
+                            new CustomEvent("prefill-contact-subject", {
+                              detail: item.title,
+                            })
+                          );
+                          const el = document.getElementById("contact");
+                          if (el) el.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className="mt-2 w-full py-1.5 px-3 bg-white hover:bg-yellow border border-black rounded text-[11px] font-mono font-bold text-black flex items-center justify-center gap-1.5 shadow-[1.5px_1.5px_0px_#111] transition-all cursor-pointer active:scale-95"
+                        data-cursor="INQUIRE"
+                      >
+                        <span>Inquire for {item.title.replace(" System", "").replace(" Management", "")}</span>
+                        <ArrowRight size={12} />
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           {/* Footer Actions */}
           <div className="flex flex-wrap items-center justify-end gap-3 pt-4 border-t-2 border-black/10">
             <button
@@ -227,7 +334,46 @@ function ProjectCard({ project, onOpenDetails }) {
           </div>
 
           {/* Card preview visual */}
-          {project.image ? (
+          {project.isSoftwareSuite ? (
+            <div className="p-3.5 bg-gradient-to-br from-yellow/30 via-white to-yellow/15 border-b-2 border-black">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] font-mono font-extrabold uppercase bg-black text-white px-2 py-0.5 rounded shadow-[1px_1px_0px_#FFD633]">
+                  8-in-1 Software Suite
+                </span>
+                <span className="text-[10px] font-mono font-bold text-black/60">
+                  Ready to Deploy
+                </span>
+              </div>
+              <div className="grid grid-cols-4 gap-1.5 py-1">
+                {[
+                  { label: "Inventory", icon: Package },
+                  { label: "Store POS", icon: Store },
+                  { label: "Technician", icon: Wrench },
+                  { label: "HRMS", icon: Users },
+                  { label: "E-Commerce", icon: ShoppingBag },
+                  { label: "Pharmacy", icon: Pill },
+                  { label: "Restaurant", icon: UtensilsCrossed },
+                  { label: "Clinic OPD", icon: Stethoscope },
+                ].map(({ label, icon: Icon }) => (
+                  <div
+                    key={label}
+                    className="p-1.5 bg-white border border-black rounded shadow-[1px_1px_0px_#111] flex flex-col items-center text-center justify-center hover:bg-yellow/40 transition-colors"
+                  >
+                    <Icon size={14} className="text-black mb-0.5" />
+                    <span className="text-[8.5px] font-mono font-extrabold text-black/90 truncate w-full">
+                      {label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-2 pt-1.5 border-t border-black/15 flex items-center justify-between text-[10.5px] font-mono text-black/80">
+                <span className="font-extrabold">✦ Modular Systems</span>
+                <span className="text-black font-extrabold underline decoration-yellow decoration-2">
+                  View All 8 &rarr;
+                </span>
+              </div>
+            </div>
+          ) : project.image ? (
             <div className="relative w-full overflow-hidden bg-neutral-900 group">
               <img
                 src={project.image}
@@ -313,7 +459,7 @@ function ProjectCard({ project, onOpenDetails }) {
             className="sketch-button-outline text-xs py-1.5 px-3 flex-1 justify-center items-center gap-1.5 cursor-pointer font-bold"
           >
             <Info size={13} />
-            <span>Details</span>
+            <span>{project.isSoftwareSuite ? "Explore 8 Systems" : "Details"}</span>
           </button>
         )}
         {project.live && (
